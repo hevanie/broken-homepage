@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henrietta van Niekerk - Portfolio Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url("https://cdn.kimkim.com/files/a/images/e1d49fe2c45904294b5a3340d85b82c50ecd0962/original-e8f372f4bec9b0a68d1eb7cb55f104ed.jpg")center/cover no-repeat;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+      /*Code copied from: https://www.youtube.com/watch?v=FEmysQARWFU
+Author: Kevin Powell
+Name: Automatic slideshow
+Description: I know how to make a toolbar and list using <a>,
+      as per assignment specifications, butwanted some
+      animations, and used this video.
+Date retrieved: Dec. 8, 2023
+-->
+
+<!-- Copied code starts -->*/
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            width: 100%;
+          	padding: 0;
+            background: #55d6aa;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+
+        header::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        nav {
+            float: right;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-left: 70px;
+            padding-top: 15px;
+          	padding-bottom: 15px;
+            position: relative;
+        }
+
+        nav a {
+            color: #444;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        nav a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            background-color: #444;
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 250ms;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+      
+      /* copied code ends */
+
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 14px;
+            margin: 0;
+            color: #ddd;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 8em auto;
+            padding: 0 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white background for better readability */
+            border-radius: 8px; /* rounded corners for better aesthetics */
+            text-align: center;
+            position: relative; /* position relative for z-index stacking */
+            z-index: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: rgba(51, 51, 51, 0.8); /*semi-transluscent to put greater emphasis on background*/
+            color: #fff;
+            width: 100%;
+          position: absolute;
+          	bottom: 0;
+            margin-top: 8em; /* margin to create space below content */
+        }
+  </style>
+</head>
+  
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div>
+            <h1>Henrietta van Niekerk</h1>
+            <p>Designer | Artist | Programmer</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Henrietta van Niekerk. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
